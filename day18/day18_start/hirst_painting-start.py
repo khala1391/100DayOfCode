@@ -5,7 +5,7 @@ import random
 import turtle
 from turtle import Turtle
 from turtle import Screen
-turtle.colormode(255)
+turtle.colormode(255)  # set color mode to RGB
 # rgb_colors = []
 # colors = colorgram.extract('image.jpg', 5)
 # for color in colors:
@@ -18,13 +18,13 @@ tim = Turtle()
 
 color_list = [(202, 164, 109), (238, 240, 245), (150, 75, 49), (223, 201, 135), (52, 93, 124), (172, 154, 40), (140, 30, 19), (133, 163, 185), (198, 91, 71), (46, 122, 86), (72, 43, 35), (145, 178, 148), (13, 99, 71), (233, 175, 164), (161, 142, 158), (105, 74, 77), (55, 46, 50), (183, 205, 171), (36, 60, 74), (18, 86, 90), (81, 148, 129), (148, 17, 20), (14, 70, 64), (30, 68, 100), (107, 127, 153), (174, 94, 97), (176, 192, 209)]
 
-tim.hideturtle()
+tim.speed("fastest")
+tim.hideturtle()  # hide cursor
 tim.setheading(225)
-tim.penup()
+tim.penup()  # raise pen : no line
 tim.forward(300)
 tim.setheading(0)
 
-# tim.speed("fastest")
 # tim.color("pink")
 # tim.fillcolor("pink")
 # tim.begin_fill()
@@ -43,5 +43,6 @@ for dot_count in range(1,number_of_dots+1):
         tim.forward(500)
         tim.setheading(0)
 
-screen = Screen()
-screen.exitonclick()
+tim.screen.mainloop()  # always show screen
+# screen = Screen()
+# screen.exitonclick()    # exit on click

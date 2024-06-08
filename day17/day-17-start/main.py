@@ -25,4 +25,3 @@ print(user_1.followers)  #10
 print(user_1.following)  #21 >>increase
 print(user_2.followers)  #11 >>increase
 print(user_2.following)  #20
-
